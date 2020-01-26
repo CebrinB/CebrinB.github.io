@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+</head>
+<body>
+  <h1>Calculator Exercise</h1>
+
+  <button onclick="prompt()">Enter Values</button>
+  <button onclick="calculator.sum()">Add</button>
+  <button onclick="calculator.mul()">Multiply</button>
+
+
+  <div id="read" style="display: none;">
+    <input type="number" id="first">
+    <input type="number" id="second">
+    <button onclick="calculator.read()">Submit</button>
+  </div>
+
+  <div id="add" style="display: none;">
+
+  </div>
+  
+  <div id="mul" style="display: none;">
+
+  </div>  
+  <script src="week3.js"></script>
+</body>
+</html>

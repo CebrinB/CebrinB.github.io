@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+</head>
+<body>
+  <a href="index.html">Home</a>
+  <h1>Calculator Exercise</h1>
+
+  <button id="values">Enter Values</button>
+  <button id="button2">Add</button>
+  <button id="button3">Multiply</button>
+
+  <div id="read" style="display: none;">
+    <input type="number" id="first">
+    <input type="number" id="second">
+    <button id="enter">Submit</button>
+  </div>
+
+  <div id="add" style="display: none;"></div>
+  
+  <div id="mul" style="display: none;"></div> 
+
+  <div style="width: 800px;">
+    <p>Notes:</p>
+    <p>I updated my onclick properties to eventListeners in js. I like how they work. The book says
+      to use the 'click' event to be compatible with both touch- and non-touchscreens, but the 
+      directions for our team activity this week specifically say to use a 'touch' listener. It is
+      interesting the difference between developing for mobile vs. desktop computing. I am 
+      interested to see how it works differently in our team activity. </p>
+    <link>I was late getting my Sitepoint membership and didn't start reading the book until last week. 
+      This week, I began the 'quiz ninja' project from the book chapters. You can see my progress
+      <a href="quizNinja.html"> by clicking here.</a> The onyl thing I did differently than the book
+      so far is I wrapped the game logic in a game() function that loads after the html so that 
+      the page loads before the game alerts pop up. 
+    </p>
+    <p>Most of what I have read is a review so far. The only thing I studied closely as being new is
+       the different ways of declaring a function. I will keep practicing with those to better 
+       understand the differences between them.
+    </p>
+  </div>
+
+  <script src="scripts/week4.js"></script>
+</body>
+</html>

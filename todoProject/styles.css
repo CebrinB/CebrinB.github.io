@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  border: solid 1px black;
+  padding: 10px;
+  font-size: large;
+}
+
+li > div {
+  display: flex;
+  align-items: center;
+}
+
+li:not(:last-child) > div > input {
+  flex: 0 0 20px;
+}
+
+li:not(:last-child) > div > span {
+  flex: 1 0 1em;
+}
+
+li:not(:last-child) > div > input[type=button] {
+  flex: 0 0 15px;
+  font-size: x-large;
+}
+
+li:last-child > div > p {
+  flex: 1 0 1em;
+}
+
+input[type=button] {
+  background: white;
+  border: none;
+}
+
+#addToDo {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#add, #new {
+  padding: 15px;
+}
+
+#add {
+  height: 51px;
+  width: 70%;
+  margin-right: 3px;
+}
+
+#new {
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 32pt;
+  border: solid 1px black;
+}
+
+input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+}
+

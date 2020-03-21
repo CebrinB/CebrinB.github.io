@@ -30,7 +30,6 @@ export default class Todo {
       child.addEventListener('touchend', e => {
         this.selectEvent(e);
       });
-      debugger;
     });
   }
 

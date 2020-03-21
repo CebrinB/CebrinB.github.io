@@ -150,9 +150,9 @@ function renderFilterBar(todos) {
   item.innerHTML = `
   <div>
     <p>${todos.length} tasks left</p>
-    <input type="button" value="All">
-    <input type="button" value="Active">
-    <input type="button" value="Completed">
+    <input type="button" value="All" class="target">
+    <input type="button" value="Active" class="target">
+    <input type="button" value="Completed" class="target">
     </div>`;
 
     return item;

@@ -82,3 +82,7 @@ input[type=checkbox]:checked + span {
   text-decoration: line-through;
 }
 
+:target {
+  border: red 1px solid;
+}
+

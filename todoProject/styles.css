@@ -60,7 +60,6 @@ input[type=button] {
 }
 
 .clicky {
-  font-weight: bold;
   outline: rgb(29,78,68) solid 2px;
 }
 

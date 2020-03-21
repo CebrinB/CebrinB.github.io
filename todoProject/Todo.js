@@ -78,7 +78,7 @@ export default class Todo {
   //Delete a task
   deleteTodo(todoid) {
     this.toDoList.splice(this.toDoList.indexOf(this.getTodoById(todoid)),1);
-    this.displayTodoList(this.parentElement);
+    this.filterTodo(document.querySelector('.clicky').value);
   }
 
   //Filter the displayed tasks by All, Active, and Completed
@@ -87,6 +87,7 @@ export default class Todo {
 
     if (filter === "All") {
       this.displayTodoList();
+      this.addFocus(filter);
       return;
     } else if (filter === "Active") {
       this.toDoList.forEach(todo => {
@@ -104,8 +105,18 @@ export default class Todo {
 
     this.parentElement.innerHTML = '';
     renderTodoList(this.parentElement, filteredList);
+    this.addFocus(filter);
     this.addTodoListener();
-  } 
+  }
+  
+  addFocus(filter) {
+    const buttonArray = document.querySelectorAll('.filter');
+    buttonArray.forEach(button => {
+      if (filter === button.value) {
+        button.classList.add('clicky');
+      } else button.classList.remove('clicky');
+     });
+  }
 
   //Save the array of tasks into localStorage memory
   saveTodo() {
@@ -150,9 +161,9 @@ function renderFilterBar(todos) {
   item.innerHTML = `
   <div>
     <p>${todos.length} tasks left</p>
-    <input type="button" value="All" class="target">
-    <input type="button" value="Active" class="target">
-    <input type="button" value="Completed" class="target">
+    <input type="button" value="All" class="filter clicky">
+    <input type="button" value="Active" class="filter">
+    <input type="button" value="Completed" class="filter">
     </div>`;
 
     return item;

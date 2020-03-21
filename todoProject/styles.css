@@ -3,16 +3,24 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Allan';
   font-size: 16px;
+  background: #8fc7b4;
+}
+
+#head {
+  border-bottom: solid black 1px;
 }
 
 h1 {
+  margin-bottom: 0px;
   text-align: center;
+  font-size: 38px;
 }
 
 ul {
   list-style-type: none;
+  margin-top: 25px;
   margin-left: 0;
   padding-left: 0;
 }
@@ -21,6 +29,7 @@ li {
   border: solid 1px black;
   padding: 10px;
   font-size: large;
+  background: rgb(216, 233, 231);
 }
 
 li > div {
@@ -46,8 +55,13 @@ li:last-child > div > p {
 }
 
 input[type=button] {
-  background: white;
+  background: none;
   border: none;
+}
+
+.clicky {
+  font-weight: bold;
+  outline: rgb(29,78,68) solid 2px;
 }
 
 input[type="text"] {
@@ -55,7 +69,7 @@ input[type="text"] {
 }
 
 #addToDo {
-  margin-top: 75px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -80,9 +94,5 @@ input[type="text"] {
 
 input[type=checkbox]:checked + span {
   text-decoration: line-through;
-}
-
-:target {
-  border: red 1px solid;
 }
 

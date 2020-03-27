@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Allan';
+  font-size: 16px;
+  background: #4d907b;
+}
+
+#head {
+  border-bottom: solid black 1px;
+}
+
+h1 {
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 38px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 25px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  border: solid 1px black;
+  padding: 10px;
+  font-size: large;
+  background: rgb(216, 233, 231);
+}
+
+li > div {
+  display: flex;
+  align-items: center;
+}
+
+li:not(:last-child) > div > input {
+  flex: 0 0 20px;
+}
+
+li:not(:last-child) > div > span {
+  flex: 1 0 1em;
+}
+
+li:not(:last-child) > div > input[type=button] {
+  flex: 0 0 15px;
+  font-size: x-large;
+}
+
+li:last-child > div > p {
+  flex: 1 0 1em;
+}
+
+input[type=button] {
+  background: none;
+  border: none;
+}
+
+.clicky {
+  outline: rgb(29,78,68) solid 2px;
+}
+
+input[type="text"] {
+  font-size: inherit;
+}
+
+#addButton {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#add, #new {
+  padding: 15px;
+}
+
+#add {
+  height: 51px;
+  width: 70%;
+  margin-right: 3px;
+}
+
+#new {
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 32pt;
+  border: solid 1px black;
+}
+
+input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+}
+

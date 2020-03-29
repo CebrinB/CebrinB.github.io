@@ -19,9 +19,99 @@
           <img src="addbutton.png" alt="Add a Horse">
         </a>
       </div>
+
+      <div id="menu" style="display:none"><p>This is the menu</p></div>
+
       <ul id="horses" class="horseStyles">
         <!-- see Horse.js for functions to render this html. -->
       </ul>
+      <div id="makeHorse" style="display:none">
+        <form name="newHorse" id="newHorse">
+          <ul>
+            <li class="spacer">
+              <label for="name">Horse's Name:</label>
+              <input type="text" id="name" placeholder="ie Ruby's Foal">
+            </li>
+            <li><label for="damColor">Dam's coat color:</label>
+              <select id="damColor">
+                <option value="0" selected>Select Color</option>
+                <option value="1">Bay</option>
+                <option value="2">Black</option>
+                <option value="3">Brown</option>
+                <option value="4">Grullo (Black Dun)</option>
+                <option value="5">Bay Dun (Zebra Dun)</option>
+                <option value="6">Buckskin</option>
+                <option value="7">Cremello</option>
+                <option value="8">Red Dun</option>
+                <option value="9">Champagne</option>
+                <option value="10">Red (Chestnut/Sorrel)</option>
+                <option value="11">Palomino</option>
+                <option value="12">Silver Dapple</option>
+              </select>
+            </li>
+            <li>
+              <label for="damPattern">Dam's Coat Pattern:</label>
+              <select name="damPattern" id="damPattern">
+                <option value="None" selected>Solid</option>               
+                <option value="16">Appaloosa</option>
+                <option value="2">Sabino</option>
+                <option value="3">Tobiano</option>
+                <option value="3">Overo</option>
+                <option value="3">Roan</option>
+                <option value="3">Tobiano</option>
+              </select>
+            </li>
+            <li class="spacer">
+              <label for="damGray">Gray?</label>
+              <input type="checkbox" id="damGray">
+            </li>
+            <li>
+              <label for="sireColor">Sire's coat color:</label>
+              <select id="sireColor">
+                <option value="0" selected>Select Color</option>
+                <option value="1">Bay</option>
+                <option value="2">Black</option>
+                <option value="3">Brown</option>
+                <option value="4">Grullo (Black Dun)</option>
+                <option value="5">Bay Dun (Zebra Dun)</option>
+                <option value="6">Buckskin</option>
+                <option value="7">Cremello</option>
+                <option value="8">Red Dun</option>
+                <option value="9">Champagne</option>
+                <option value="10">Red (Chestnut/Sorrel)</option>
+                <option value="11">Palomino</option>
+                <option value="12">Silver Dapple</option>
+              </select>
+            </li>
+            <li>
+              <label for="sirePattern">Sire's coat Pattern:</label>
+              <select name="sirePattern" id="sirePattern">
+                <option value="None" selected>Solid</option>               
+                <option value="16">Appaloosa</option>
+                <option value="1">Frame Overo</option>
+                <option value="2">Sabino</option>
+                <option value="8">Splash</option>
+                <option value="3">Tobiano</option>
+                <option value="5">Frame/Sabino</option>
+                <option value="6">Tobiano/Frame</option>
+                <option value="7">Tobiano/Sabino</option>
+                <option value="9">Tobiano/Splash</option>
+                <option value="10">Frame/Splash</option>
+                <option value="11">Sabino/Splash</option>
+                <option value="15">Tobiano/Frame/Sabino</option>
+                <option value="12">Tobiano/Frame/Splash</option>
+                <option value="13">Tobiano/Sabino/Splash</option>
+                <option value="14">Frame/Sabino/Splash</option>
+              </select>
+            </li>
+            <li>
+              <label for="sireGray">Gray?</label>
+              <input type="checkbox" id="sireGray">
+            </li>
+          </ul>
+          <button id="submitForm">Calculate Coat Color</button>
+        </form>
+      </div>
     </main>
     
     <script src="main.js" type="module"></script>

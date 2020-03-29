@@ -9,13 +9,49 @@ body {
 }
 
 #head {
+  margin-top: 10px;
   border-bottom: solid black 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#head a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0;
 }
 
 h1 {
-  margin-bottom: 0px;
+  margin: 0px;
   text-align: center;
   font-size: 38px;
+  color: #cbe1de;
+}
+
+#menu {
+  position: absolute;
+  background-color: #1d4e44;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+
+.active {
+  position: relative;
+  left: 36%;
+  z-index: 1;
+  transform: rotate(90deg);
+}
+
+.active img {
+  transform: rotate(90);
+}
+
+#newHorse {
+  text-align: center;
 }
 
 ul {
@@ -23,6 +59,11 @@ ul {
   margin-top: 25px;
   margin-left: 0;
   padding-left: 0;
+  text-align: left;
+}
+
+.spacer {
+  margin-bottom: 10px;
 }
 
 li {
@@ -93,5 +134,11 @@ input[type="text"] {
 
 input[type=checkbox]:checked + span {
   text-decoration: line-through;
+}
+
+#submitForm {
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 auto;
 }
 

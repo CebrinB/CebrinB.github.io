@@ -1,3 +1,4 @@
+import { renderHorseList, renderOneHorse } from "./utilities.js";
 export default class Horse {
   constructor(elementId) {
     this.parentElement = elementId;
@@ -31,35 +32,29 @@ export default class Horse {
         this.selectEvent(e);
       });
     });
-  }
-
-  //evaluates user touch input on a list item to determine which function to call
-  selectEvent(event) {
-    switch (event.target.value) {
-      case "on":
-          this.completeHorse(event.target.checked,event.currentTarget.dataset.horseid);
-          break;
-      case "X":
-          this.deleteHorse(event.currentTarget.dataset.horseid);
-          break;
-      case "All":
-      default:
-          break;
-    }
   }  
 
   //Create a new horse
   addHorse() {
-    console.log("it worked!");
-    // if (text.length > 0) {
-    //   const task = {
-    //     id: + new Date(),
-    //     content: text,
-    //     completed: false
-    //   };
-    //   this.horseList.push(horse);
-    // }
-    // document.getElementById('add').value = '';
+    let form = document.getElementById('newHorse');
+    console.log(form.elements);
+
+    
+    //document.getElementById('makeHorse').style.display = 'none';
+    /*const horse = {
+      id: + new Date(),
+      name: form.elements[0],
+      damColor: form.elements[1],
+      damPattern: form.elements[2],
+      damGray: form.elements[3],
+      sireColor: form.elements[4],
+      sirePattern: form.elements[5],
+      sireGray: form.elements[6]
+    };*/
+
+    //console.log(horse);
+    //this.horseList.push(horse);
+    //document.getElementById('add').value = '';
   }
 
   //Mark a horse as "Completed"
@@ -82,38 +77,5 @@ export default class Horse {
   loadHorse() {
     this.horseList = JSON.parse(localStorage.getItem('horseList'));
   }
-
-  //open the menu
-  openMenu() {
-    console.log("menu clicked!");
-  }
 };
-
-//open the menu
-function openMenu() {
-  console.log("menu clicked!");
-}
-//Dynamically renders HTML for horse list
-function renderHorseList(parent, horses) {
-  horses.forEach(horses => {
-    parent.appendChild(renderOneHorse(horse));
-  });  
-}
-
-//Dynamically renders HTML for a single horse
-function renderOneHorse(horse) {
-  const item = document.createElement('li');
-  //item.classList.add('light');
-  item.setAttribute('data-horseid', horse.id);
-  let checked = (horse.completed ? 'Checked' : '');
-  
-  item.innerHTML = `
-  <div>
-    <input type="checkbox" ${checked}>
-    <span>${horse.content}</span>
-    <input type="button" value="X" > 
-  </div>`;
-
-  return item;
-}
 

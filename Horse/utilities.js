@@ -1,23 +1,3 @@
-//open the menu
-export function openMenu() {
-  document.getElementById('menu').style.display = 'block';
-  document.getElementById('menuButton').classList.add('active');
-
-}
-
-export function showCreateHorse() {
-  document.getElementById('makeHorse').style.display = 'block'; 
-}
-
-export function hideCreateHorse() {
-  document.getElementById('makeHorse').style.display = none; 
-}
-
-
-export function showHorse() {
-  document.getElementById('createHorse').style.display = none; 
-}
-
 //evaluates user touch input on a list item to determine which function to call
 export function selectEvent(event) {
   switch (event.target.value) {

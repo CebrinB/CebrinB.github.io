@@ -28,7 +28,6 @@ export default class Todo {
     const childrenArray = Array.from(this.parentElement.children);
     childrenArray.forEach(child => {
       child.addEventListener('touchend', e => {
-        debugger;
         this.deleteTodo(e.currentTarget.getAttribute('id'));
       });
     });
@@ -43,9 +42,6 @@ export default class Todo {
       completed: false
     };
     this.toDoList.push(task);
-
-    console.log(this.toDoList);
-
   }
 
   editTodo() {}

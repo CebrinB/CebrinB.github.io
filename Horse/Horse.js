@@ -1,4 +1,11 @@
 import { renderHorseList, renderOneHorse } from "./utilities.js";
+
+const colors = ['Bay','Black','Brown','Grullo (Black Dun)',
+  'Bay Dun (Zebra Dun)','Buckskin','Cremello','Red Dun',
+  'Champagne', 'Red (Chestnut/Sorrel)','Palomino', 'Silver Dapple'];
+
+
+
 export default class Horse {
   constructor(elementId) {
     this.parentElement = elementId;
@@ -37,24 +44,21 @@ export default class Horse {
   //Create a new horse
   addHorse() {
     let form = document.getElementById('newHorse');
-    console.log(form.elements);
 
-    
-    //document.getElementById('makeHorse').style.display = 'none';
-    /*const horse = {
+    const horse = {
       id: + new Date(),
-      name: form.elements[0],
-      damColor: form.elements[1],
-      damPattern: form.elements[2],
-      damGray: form.elements[3],
-      sireColor: form.elements[4],
-      sirePattern: form.elements[5],
-      sireGray: form.elements[6]
-    };*/
+      name: form.elements[0].value,
+      damColor: form.elements[1].options[form.elements[1].selectedIndex].text,
+      damPattern: form.elements[2].options[form.elements[2].selectedIndex].text,
+      damGray: form.elements[3].checked,
+      sireColor: form.elements[4].options[form.elements[4].selectedIndex].text,
+      sirePattern: form.elements[5].options[form.elements[5].selectedIndex].text,
+      sireGray: form.elements[6].checked
+    };
 
-    //console.log(horse);
-    //this.horseList.push(horse);
-    //document.getElementById('add').value = '';
+    this.horseList.push(horse);
+    this.saveHorse();
+    document.getElementById('makeHorse').style.display = 'none';
   }
 
   //Mark a horse as "Completed"

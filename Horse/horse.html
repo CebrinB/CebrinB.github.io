@@ -3,28 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Color Will the Foal be?</title>
-    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <title>Foal Color Calculator</title>
+    <script src="https://kit.fontawesome.com/b631726285.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kristi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <main>
-      <a href="../index.html">Home</a>
+      <!-- Header bar -->
       <div id="head">
         <a id="menuButton">
-          <img src="hamburgermenu.png" alt="Menu">
+          <i class="fas fa-bars"></i>
         </a>
-        <h1>Welcome, User!</h1>
+        <h1>Welcome, <span id="user"></span>!</h1>
         <a id="addButton">
-          <img src="addbutton.png" alt="Add a Horse">
+          <i id="rot" class="fas fa-plus-circle"></i>
         </a>
       </div>
 
-      <div id="menu" style="display:none"><p>This is the menu</p></div>
+      <!-- Menu navigation -->
+      <div id="menu">
+        <ul>
+          <li>
+            <a id="addUser">Create a Profile</a>
+          </li>
+          <li>
+            <a id="add">Add a Horse</a>
+          </li>
+          <li>
+            <a href="../index.html">Logout / Return to Home</a>
+          </li>
+        </ul>      
+      </div>
 
+      <!-- List of User's horses -->
       <ul id="horses" class="horseStyles">
         <!-- see Horse.js for functions to render this html. -->
       </ul>
+
+      <!-- Form to make a new Horse -->
       <div id="makeHorse" style="display:none">
         <form name="newHorse" id="newHorse">
           <ul>

@@ -58,6 +58,7 @@ export default class Todo {
 
   //Create a new task
   addTodo(text) {
+    debugger;
     if (text.length > 0) {
       const task = {
         id: + new Date(),

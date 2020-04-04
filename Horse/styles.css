@@ -133,7 +133,7 @@ input[type="text"] {
   justify-content: center;
 }
 
-#add, #new {
+/*#add, #new {
   padding: 15px;
 }
 
@@ -149,7 +149,7 @@ input[type="text"] {
   width: 50px;
   font-size: 32pt;
   border: solid 1px black;
-}
+}*/
 
 #submitForm {
   padding: 10px 20px;

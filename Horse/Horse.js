@@ -1,5 +1,3 @@
-import { renderHorseList, renderOneHorse } from "./utilities.js";
-
 const colors = ['Bay','Black','Brown','Grullo (Black Dun)',
   'Bay Dun (Zebra Dun)','Buckskin','Cremello','Red Dun',
   'Champagne', 'Red (Chestnut/Sorrel)','Palomino', 'Silver Dapple'];
@@ -19,27 +17,39 @@ export default class Horse {
 
   //Takes the ID for a single horse and returns that horse from the array
   getHorseById(horseId) {
-    return this.getAllHorses().find(horse => horse.id.toString() === horseId);
+    return this.getAllHorses().find(horse => horse.id === horseId);
   }
 
-  //Displays the horse list, calls the setter for event listeners
-  // on the horse list, and saves the horse list.
-  displayHorseList() {
-    this.parentElement.innerHTML = '';
-    renderHorseList(this.parentElement, this.getAllHorses());
-    this.addHorseListener();
-    this.saveHorse();
-  }
-
-  //sets a listener for each list item being displayed
-  addHorseListener() {
-    const childrenArray = Array.from(this.parentElement.children);
-    childrenArray.forEach(child => {
-      child.addEventListener('touchend', e => {
-        this.selectEvent(e);
-      });
-    });
-  }  
+  renderHorseList(parent) {
+    parent.innerHTML = '';
+  
+    this.horseList.forEach(
+      (horse) => {
+        let item = document.createElement('li');
+        item.classList.add('small');
+        
+        let pic = document.createElement('a');
+        pic.innerHTML = `
+        <img class="pic" src="default.jpg" alt="picture of horse">`;
+        pic.addEventListener('click', this.editPicture.bind(this, horse));
+  
+        let name = document.createElement('span');
+        name.innerHTML = horse.name;
+        name.addEventListener('click', this.editHorse.bind(this, horse));
+  
+        let del = document.createElement('a');
+        del.innerHTML = `
+        <i class="fas fa-plus-circle cancel"</i>`;
+        del.addEventListener('click', this.removeHorse.bind(this, horse));
+  
+        item.appendChild(pic);
+        item.appendChild(name);
+        item.appendChild(del);
+  
+        parent.appendChild(item);
+      }
+    );
+  } 
 
   //Create a new horse
   addHorse() {
@@ -61,15 +71,22 @@ export default class Horse {
     document.getElementById('makeHorse').style.display = 'none';
   }
 
-  //Mark a horse as "Completed"
-  completeHorse(checked, horseid) {
-    (checked? this.getHorseById(horseid).completed = false 
-    : this.getHorseById(horseid).completed = true)
+  //change the picture for a horse
+  editPicture(horse) {
+    console.log('edit picture!');
   }
-  
-  //Delete a horse
-  deleteHorse(horseid) {
-    this.horseList.splice(this.horseList.indexOf(this.getHorseById(horseid)),1);
+
+  //edit horse characteristics
+  editHorse(horse) {
+    console.log('edit name!');
+    console.log(horse);
+  }
+
+  //Delete horse from array, save to localStorage, then redraw the list
+  removeHorse(horse) {
+    this.horseList.splice(this.horseList.indexOf(this.getHorseById(horse.id)),1);
+    this.saveHorse();
+    this.renderHorseList(document.querySelector('#horses'));
   }
 
   //Save the array of horses into localStorage memory

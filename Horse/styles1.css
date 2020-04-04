@@ -49,11 +49,6 @@ i {
   padding-top: 35px;
 }
 
-#menu a {
-  text-decoration: none;
-  color: black;
-}
-
 .show {
   display: block !important;
 }
@@ -67,15 +62,10 @@ i {
 
 .cancel {
   transform: rotate(45deg);
-  color: #072c25;
 }
 
-.accordion {
-
-}
-
-#main {
-  display:none;
+.active img {
+  transform: rotate(90);
 }
 
 #newHorse {
@@ -99,29 +89,38 @@ li {
   padding: 10px;
   font-size: large;
   background: rgb(216, 233, 231);
-  display:flex;
+}
+
+li > div {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-img {
-  width: 60px;
-  height: 50px;
+li:not(:last-child) > div > input {
+  flex: 0 0 20px;
 }
 
-li span {
-  font-size: xx-large;
+li:not(:last-child) > div > span {
+  flex: 1 0 1em;
 }
 
-li:first-child {
-  /*flex: 1 0 1em;*/
-  
+li:not(:last-child) > div > input[type=button] {
+  flex: 0 0 15px;
+  font-size: x-large;
 }
 
-/*input[type=button] {
+li:last-child > div > p {
+  flex: 1 0 1em;
+}
+
+input[type=button] {
   background: none;
   border: none;
-}*/
+}
+
+.clicky {
+  outline: rgb(29,78,68) solid 2px;
+}
 
 input[type="text"] {
   font-size: inherit;
@@ -151,13 +150,17 @@ input[type="text"] {
   border: solid 1px black;
 }
 
+input[type=checkbox]:checked + span {
+  text-decoration: line-through;
+}
+
 #submitForm {
   padding: 10px 20px;
   display: inline-block;
   margin: 0 auto;
 }
 
-/* Side nav styles
+/* Side nav styles */
 .sidenav {
   height: 100%;
   width: 0;
@@ -200,4 +203,4 @@ input[type="text"] {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}*/
+}

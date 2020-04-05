@@ -8,51 +8,11 @@ body {
   background: #4d907b;
 }
 
-#head {
-  margin-top: 10px;
-  border-bottom: solid black 1px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#head a {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  margin: 0;
-}
-
-h1 {
-  margin: 0px;
-  text-align: center;
-  font-size: 38px;
-  color: black;
-}
-
 i {
   font-size: 40px;
   color: white;
 }
 
-#menu {
-  display: none;
-  position: absolute;
-  background-color: #1d4e44;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 40%;
-  padding: 15px;
-}
-
-#menu ul {
-  padding-top: 35px;
-}
-
-#menu a {
-  text-decoration: none;
-  color: black;
-}
 
 .show {
   display: block !important;
@@ -68,6 +28,13 @@ i {
 .cancel {
   transform: rotate(45deg);
   color: #072c25;
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 #main {
@@ -107,14 +74,6 @@ img {
 
 li span {
   font-size: xx-large;
-}
-
-.panel {
-  height: 300px;
-  padding: 0 18px;
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 
 input[type="text"] {

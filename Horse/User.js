@@ -26,4 +26,9 @@ export default class User {
     
     return this.username;
   }
+
+  changeUsername() {
+    localStorage.removeItem('horseUsername');
+    return this.loadUsername();
+  }
 }

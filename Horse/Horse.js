@@ -26,17 +26,36 @@ export default class Horse {
     this.horseList.forEach(
       (horse) => {
         let item = document.createElement('li');
-        item.classList.add('small');
         
+        item.addEventListener('click', e => {
+          let panel = e.target.nextElementSibling;
+          console.log(panel);
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+
         let pic = document.createElement('a');
         pic.innerHTML = `
         <img class="pic" src="default.jpg" alt="picture of horse">`;
-        pic.addEventListener('click', this.editPicture.bind(this, horse));
   
         let name = document.createElement('span');
         name.innerHTML = horse.name;
         name.addEventListener('click', this.editHorse.bind(this, horse));
-  
+        name.addEventListener('click', e => {
+          let panel = e.target.nextElementSibling;
+          console.log(panel);
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            panel.style.overflow = 'hidden';
+          } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.overflow = 'visible';
+          }
+        });
+
         let del = document.createElement('a');
         del.innerHTML = `
         <i class="fas fa-plus-circle cancel"</i>`;
@@ -47,6 +66,20 @@ export default class Horse {
         item.appendChild(del);
   
         parent.appendChild(item);
+
+        let li = document.createElement('li');
+        li.classList.add('panel');
+        li.innerHTML =`
+        <div>
+          <p>Dam color: ${horse.damColor}<br>Sire color: ${horse.sireColor}<br>
+          Possible foal colors: ${horse.damColor}, ${horse.sireColor}, Bay</p>
+        </div>`;
+        let button = document.createElement('button');
+        button.value = 'Edit horse';
+        button.addEventListener('click', this.editHorse.bind(this, horse));
+        li.appendChild(button);
+
+        parent.appendChild(li);
       }
     );
   } 
@@ -71,15 +104,12 @@ export default class Horse {
     document.getElementById('makeHorse').style.display = 'none';
   }
 
-  //change the picture for a horse
-  editPicture(horse) {
-    console.log('edit picture!');
-  }
-
   //edit horse characteristics
   editHorse(horse) {
-    console.log('edit name!');
-    console.log(horse);
+    document.querySelector('#makeHorse').classList.toggle('show');
+    document.querySelector('#main').classList.toggle('show'); 
+    document.querySelector('#rot').classList.toggle('cancel');
+    this.removeHorse(horse);
   }
 
   //Delete horse from array, save to localStorage, then redraw the list

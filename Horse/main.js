@@ -20,16 +20,24 @@ document.querySelector('#menuButton').addEventListener("click", () => {
   document.querySelector('#menuButton').classList.toggle('active');
 });
 
+document.querySelector('#addUser').addEventListener("click", () => {
+  document.querySelector('#menu').classList.toggle('show');
+  document.querySelector('#menuButton').classList.toggle('active');
+  document.querySelector('#user').innerHTML = user.changeUsername();
+});
+
 //set a listener for the user to add a new horse
 document.querySelector('#addButton').addEventListener("click", () => {
   document.querySelector('#makeHorse').classList.toggle('show');
-  document.querySelector('#main').classList.toggle('show');  
+  document.querySelector('#main').classList.toggle('show'); 
   document.querySelector('#rot').classList.toggle('cancel');
 });
 
+//set listener for user to add horse from menu
 document.querySelector('#add').addEventListener('click', () => {
   document.querySelector('#makeHorse').classList.toggle('show');
   document.querySelector('#menu').classList.toggle('show');
+  document.querySelector('#menuButton').classList.toggle('active');
   document.querySelector('#main').classList.toggle('show');  
   document.querySelector('#rot').classList.toggle('cancel');
 });

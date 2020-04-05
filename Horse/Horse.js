@@ -22,6 +22,17 @@ export default class Horse {
 
   renderHorseList(parent) {
     parent.innerHTML = '';
+
+    if (this.horseList.length < 1) {
+      let div = document.createElement('div');
+      div.setAttribute('id', 'instructions');
+      div.innerHTML =`
+      <div>
+        <p>Add a horse to see it's possible coat color!</p>
+      </div>`;
+      parent.appendChild(div);
+      return;
+    }
   
     this.horseList.forEach(
       (horse) => {
@@ -91,7 +102,7 @@ export default class Horse {
 
   //Create a new horse
   addHorse() {
-    let form = document.getElementById('newHorse');
+    let form = document.querySelector('#newHorse');
 
     const horse = {
       id: + new Date(),
@@ -106,14 +117,18 @@ export default class Horse {
 
     this.horseList.push(horse);
     this.saveHorse();
-    document.getElementById('makeHorse').style.display = 'none';
+    document.querySelector('#makeHorse').style.display = 'none';
   }
 
   //edit horse characteristics
-  editHorse(horse) {
+  editHorse(horse) {    
     document.querySelector('#makeHorse').classList.toggle('show');
     document.querySelector('#main').classList.toggle('show'); 
     document.querySelector('#rot').classList.toggle('cancel');
+    
+    let form = document.querySelector('#newHorse');
+    form.elements[0].value = horse.name;
+
     this.removeHorse(horse);
   }
 

@@ -29,32 +29,36 @@ export default class Horse {
         
         item.addEventListener('click', e => {
           let panel = e.target.nextElementSibling;
-          console.log(panel);
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.maxHeight = "300px";
           }
         });
 
         let pic = document.createElement('a');
         pic.innerHTML = `
         <img class="pic" src="default.jpg" alt="picture of horse">`;
+        pic.addEventListener('click', e => {
+          let panel = e.target.parentElement.parentElement.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+          panel.style.maxHeight = "300px";
+          }
+        });
   
         let name = document.createElement('span');
         name.innerHTML = horse.name;
-        name.addEventListener('click', this.editHorse.bind(this, horse));
         name.addEventListener('click', e => {
-          let panel = e.target.nextElementSibling;
-          console.log(panel);
+          let panel = e.target.parentElement.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
-            panel.style.overflow = 'hidden';
           } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-          panel.style.overflow = 'visible';
+          panel.style.maxHeight = "300px";
           }
         });
+        
 
         let del = document.createElement('a');
         del.innerHTML = `
@@ -74,8 +78,9 @@ export default class Horse {
           <p>Dam color: ${horse.damColor}<br>Sire color: ${horse.sireColor}<br>
           Possible foal colors: ${horse.damColor}, ${horse.sireColor}, Bay</p>
         </div>`;
-        let button = document.createElement('button');
-        button.value = 'Edit horse';
+        let button = document.createElement('input');
+        button.type = 'button';
+        button.value = 'Edit Horse';
         button.addEventListener('click', this.editHorse.bind(this, horse));
         li.appendChild(button);
 

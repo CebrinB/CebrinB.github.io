@@ -1,0 +1,94 @@
+body {
+  padding-top: 10%;
+  background-image: url("background.jpg");
+  background-size: 45% 100%;
+  background-repeat: no-repeat;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*remove default styling from <a> tags, except in the navbar*/
+a:not(.navbar-brand, .nav-link) {
+  color: inherit;
+  text-decoration: inherit;
+  /*cursor: inherit;*/
+}
+
+/*styling for homepage contact card center element*/
+.contact-card {
+  padding-top: 80px;
+  padding-bottom:120px;
+  margin-bottom: 80px;
+}
+
+.card-title {
+  padding-left: 45px;
+  padding-right:45px;
+}
+
+.card-text {
+  letter-spacing: 3px;
+}
+
+.contact-card-left {
+  background-color: #C1D7D9;
+  padding: 0;
+  padding-top: 30px;
+}
+
+#minifooter {
+  display: flex; 
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #FFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  
+}
+
+.contact-card-right {
+  padding-top: 20px;
+  background-color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*styling links in footer to space evenly*/
+#follow {
+  display: flex;
+  justify-content:space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+.footer {
+  background-color: #FFF;
+  position: absolute;
+  bottom:0;
+}
+
+/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+html {
+  position: relative;
+  min-height:100%;
+}
+
+/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+.footer-margin {
+  margin-top: 0px;
+}

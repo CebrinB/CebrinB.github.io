@@ -36,58 +36,17 @@
 
     <main>
       <div class="container-fluid">
-        <div class="row"> <!-- 3 columns in a row -->
+        <div class="row"> <!-- 3 columns in row -->
           
           <div class="col-md-2"></div> <!-- left column -->
           
-          <div class="col-md-8"> <!-- center column -->
-            <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
+          <div class="col-md-6"> <!-- center column -->
+            <div class="row">
               
-              <div class="col-md-6 innerElement-left"><h2>Who I am</h2></div> <!-- close  left column-->
+              <div class="col-md-12">
+                <embed src="resume.pdf" width="100%" height="100%" />
+              </div> <!-- close column-->
               
-              <div class="col-md-6">
-                <div>I'm a software engineer specialised in frontend and backend development 
-                     for complex scalable web apps. I write about software development on my 
-                     blog. Want to know how I may help your project? Check out my project portfolio 
-                     and online resume.
-                </div>
-                <div>
-                  <button onclick="window.location.href='resume.html'"><i class="fas fa-file-alt"></i> RESUME</button>
-                  <button onclick="window.location.href='projects.html'"><i class="fas fa-arrow-circle-right"></i> PROJECTS</button>
-                </div>
-              </div> <!-- close right column-->
-            
-            </div> <!-- close row -->
-            <div class="row"><div class="col-md-12 text-center"><i class="fas fa-lemon"></i></div></div> <!-- spacing row -->
-            <div class="row innerElement">
-
-              <div class="col-md-6 innerElement-left"><h2>What I do</h2></div> <!-- close left column-->
-              
-              <div class="col-md-6">
-                <div>I have more than 10 years' experience building software for clients all over 
-                     the world. Below is a quick overview of my main technical skill sets and 
-                     technologies I use. Want to find out more about my experience? Check out my 
-                     online resume and project portfolio.
-                </div>
-              </div> <!-- close right column-->
-            
-            </div> <!-- close row -->
-            <div class="row"><div class="col-md-12 text-center"><i class="fas fa-lemon"></i></div></div> <!-- spacing row -->
-            <div class="row innerElement">
-
-              <div class="col-md-6 innerElement-left"><h2>Skills</h2></div> <!-- close left column-->
-              
-              <div class="col-md-6">
-                <div>
-                  <span><i class="fas fa-lemon"></i> JavaScript</span>
-                  <span><i class="fas fa-lemon"></i> HTML/CSS/Bootstrap</span>
-                  <span><i class="fas fa-lemon"></i> Java</span>
-                  <span><i class="fas fa-lemon"></i> C++</span>
-                  <span><i class="fas fa-lemon"></i> Python</span>
-                  <span><i class="fas fa-lemon"></i> PHP</span>
-                  <span><i class="fas fa-lemon"></i> Visual Studio/Visual Studio Code</span>
-                </div>
-              </div> <!-- close right column-->
             
             </div> <!-- close row -->
           </div> <!-- close center column -->
@@ -98,13 +57,12 @@
     </main>
       
     <!-- FOOTER -->
-    <div class="footer-margin" id="footer-spacing"><pre>   </pre></div> <!-- close footer-margin -->
+    <div class="footer-margin">
       <footer class="footer container-fluid text-center">
         <div  class="row"> <!-- two columns -->
           
           <div class="col-md-6 footer-margin">
-            © 2023 by Team Portfolio Pals.<br>
-            Design credit to <a href="https://www.wix.com/website-template/view/html/2622?siteId=7e761c3c-729b-4d4e-9dc3-a8242c486f56&metaSiteId=3f62d478-a066-43ee-98e6-3e48600ff893&originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fpersonal&tpClick=view_button">Maya Nelson</a>.
+            © 2023 by Team Portfolio Pals.
           </div> <!-- close left column -->
           
           <div class="col-md-6 footer-margin">
@@ -131,7 +89,7 @@
             
         </div>
       </footer>
-    
+    </div> <!-- close footer-margin -->
     
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

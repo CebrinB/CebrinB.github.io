@@ -5,7 +5,7 @@
 // });
 
 
-$.get("http://127.0.0.1:5500/text.json", function(data){
+$.get("../text.json", function(data){
   $( "body" ).data("personData", data);
 }, 'json');
 

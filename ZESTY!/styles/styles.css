@@ -1,0 +1,170 @@
+body {
+  padding-top: 75px;
+  background-image: url("/images/background.jpg");
+  background-size: 45% 100%;
+  background-repeat: no-repeat;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body.about {
+  background-size: 35% 100%;
+}
+
+/*remove default styling from <a> tags, except in the navbar*/
+a:not(.navbar-brand, .nav-link) {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*styling for homepage contact card center element*/
+.contact-card {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  margin-bottom: 80px;
+}
+
+/*adds a soft box shadow*/
+.shadowleft {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.shadowright {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-title {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.card-text {
+  letter-spacing: 3px;
+}
+
+.contact-card-left {
+  background-color: #c1d7d9;
+  padding: 0;
+  padding-top: 30px;
+}
+
+#minifooter {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.contact-card-right {
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+.innerElement {
+  padding: 15px;
+}
+
+.innerElement-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1d7d9;
+}
+
+.innerElement-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#resume-projects {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}*/
+
+.fa-lemon {
+  color: #fff546;
+}
+
+.flexProjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.formContainer {
+  text-align: center;
+  background-color: #c1d7d9;
+  height: 400px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+#form {
+  margin-top: 50px;
+  background-color: #c1d7d9;
+  padding: 3em;
+  border-radius: 25px;
+}
+
+/*styling links in footer to space evenly*/
+#follow {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+.footer {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*!IMPORTANT!Styling to get the footer to stay at the bottom of page*/
+.footer-margin {
+  margin-top: 0px;
+}
+
+#footer-spacing {
+  margin: 30px;
+}

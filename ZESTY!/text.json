@@ -1,0 +1,41 @@
+{
+  "brand": "cebrinski!",
+  "name": "Cebrin Billings",
+  "jobtitle": "SOFTWARE ENGINEER",
+  "greeting": "Hello",
+  "whoami": "Who I am & What I do",
+  "welcome": "Welcome to my page. Feel free to contact me with any questions!",
+  "phone": "515-555-5555",
+  "email": "cebrin@byui.edu",
+  "facebook": "test",
+  "twitter": "#",
+  "linkedin": "https://www.linkedin.com/in/cebrinbillings",
+  "instagram": "#",
+
+  "section": [
+    {
+      "title": "Work History",
+      "text": "worked super hard at doing cool stuff and things"
+    }
+  ],
+  "picsection": [
+    {
+      "image": "personal.jpg",
+      "text": [
+        "short description of yourself",
+        "something else fun"
+      ]
+    }
+  ],
+  "listsection": [
+    {
+      "listtitle": "Skills",
+      "listitems": [
+        "skill1",
+        "skill2",
+        "skill3",
+        "skill4"
+      ]
+    }
+  ]  
+}

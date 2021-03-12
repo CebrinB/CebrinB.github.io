@@ -1,6 +1,6 @@
 body {
   padding-top: 75px;
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: 45% 100%;
   background-repeat: no-repeat;
   font-family: "Noto Sans", sans-serif;

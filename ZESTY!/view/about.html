@@ -26,13 +26,13 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item active"><a class="nav-link" href="about.html">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="about.html">About Me <span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a class="nav-link"href="#" id="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a class="nav-link"href="#" id="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn  <i class="fas fa-lemon"></i></a></li>
         </ul>
       </div>
     </nav>
@@ -43,18 +43,18 @@
           
           <div class="col-md-2"></div> <!-- left column -->
           
-          <div class="col-md-8"> <!-- center column -->
+          <div class="col-md-8 innerColumn"> <!-- center column -->
             <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
               <div class="col-md-6 innerElement-left">
                 <img class="" style="width:100%; padding:2em" src="../images/personal.jpg" alt="A friendly picture of myself">
               </div> <!-- close left inner column-->
-              <div class="col-md-6 contact-card-right">
-                <div id="aboutme1"><span class="h4">I live in</span> Dallas, Texas with my husband and 3 children. I love the outdoors and working 
+              <div class="col-md-6 innerElement-right">
+                <div id="aboutme1"><span class="h5">I live in</span> Dallas, Texas with my husband and 3 children. I love the outdoors and working 
                   hard to accomplish something meaningful.
                 </div>
                 <div class="text-center" style="padding:.5em"><i class="fas fa-lemon"></i></div>
                 <div id="aboutme2">
-                  <span class="h4">My lifelong love</span> of learning prompted me to pursue a Bachelor's degree in Software Engineering after my
+                  <span class="h5">My lifelong love</span> of learning prompted me to pursue a Bachelor's degree in Software Engineering after my
                    oldest child was born. Through the ups and downs I have learned so much, I can truly say I have loved the journey!
                 </div>
                 
@@ -65,19 +65,20 @@
             <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
               <div class="col-md-4 innerElement-left"><h3 id="section">Work History</h3></div> <!-- close left column-->
               
-              <div class="col-md-8 contact-card-right">
+              <div class="col-md-8 innerElement-right">
                 <div><span class="h5">With 9 years'</span> experience in customer service, logistics, and administrative 
                   support, I am quick under pressure and highly organized. I have 3 years' experience working remotely 
                   and work well in a team setting. Below is a quick overview of my main technical skill sets and 
                   technologies I use. 
                 </div>
-                <div class="text-center" style="padding-bottom:.5em"><i class="fas fa-lemon"></i></div>
+                <div class="text-center" style="padding-bottom:.5em; padding-top: .5em"><i class="fas fa-lemon"></i></div>
                 <div><span class="h5">Want to find</span> out more about my experience? Check out my 
-                     online resume and project portfolio.
-                </div>
+                     online resume, project portfolio, and certifications.
+                </div><br>
                 <div id="resume-projects" class="text-center">
                   <button class="btn btn-secondary btn-sm" onclick="window.location.href='resume.html'"><i class="fas fa-file-alt"></i> RESUME</button>
                   <button class="btn btn-secondary btn-sm" onclick="window.location.href='projects.html'"><i class="fas fa-arrow-circle-right"></i> PROJECTS</button>
+                  <button class="btn btn-secondary btn-sm" onclick="window.location.href='certifications.html'"><i class="fas fa-certificate"></i> CERTIFICATIONS</button>
                 </div>
               </div> <!-- close right column-->
             
@@ -88,19 +89,20 @@
 
               <div class="col-md-4 innerElement-left"><h3 id="section3">Skills</h3></div> <!-- close left column-->
               
-              <div class="col-md-8 contact-card-right">
+              <div class="col-md-8 innerElement-right">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 minicolumn">
                     <span id="skill1"><i class="fas fa-lemon"></i> JavaScript</span><br>
                     <span id="skill2"><i class="fas fa-lemon"></i> HTML/CSS/Bootstrap</span><br>
                     <span id="skill3"><i class="fas fa-lemon"></i> Java</span><br>
-                    <span id="skill4"><i class="fas fa-lemon"></i> C++</span>
+                    <span id="skill4"><i class="fas fa-lemon"></i> C++</span><br>
+                    <span id="skill5"><i class="fas fa-lemon"></i> Visual Studio Code</span>
                   </div> <!-- close mini column -->
                   <div class="col-md-6">
-                    <span id="skill5"><i class="fas fa-lemon"></i> Python</span><br>
-                    <span id="skill6"><i class="fas fa-lemon"></i> PHP</span><br>
-                    <span id="skill6"><i class="fas fa-lemon"></i> Node.js</span><br>
-                    <span id="skill7"><i class="fas fa-lemon"></i> Visual Studio/Visual Studio Code</span>
+                    <span id="skill6"><i class="fas fa-lemon"></i> Python</span><br>
+                    <span id="skill7"><i class="fas fa-lemon"></i> PHP</span><br>
+                    <span id="skill8"><i class="fas fa-lemon"></i> Node.js</span><br>
+                    <span id="skill9"><i class="fas fa-lemon"></i> Visual Studio</span>
                   </div> <!-- close mini column -->
                 </div> <!-- close row -->
               </div> <!-- close right column -->
@@ -112,9 +114,9 @@
 
               <div class="col-md-4 innerElement-left"><h3 id="section3">Hobbies & Interests</h3></div> <!-- close left column-->
               
-              <div class="col-md-8 contact-card-right">
+              <div class="col-md-8 innerElement-right">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 minicolumn">
                     <span id="skill1"><i class="fas fa-lemon"></i> Horseback Riding</span><br>
                     <span id="skill2"><i class="fas fa-lemon"></i> Hiking</span><br>
                     <span id="skill3"><i class="fas fa-lemon"></i> Gardening</span><br>
@@ -129,15 +131,15 @@
               </div> <!-- close right column -->
             
             </div> <!-- close row -->
+            <div class="row"><div class="col-md-12 text-center footer-margin"></div></div> <!-- spacing row -->
           </div> <!-- close center column -->
           
-          <div class="col-md-2"></div> <!-- right column -->    
+          <div class="col-md-2"></div> <!-- right column --> 
         </div> <!-- close row -->
       </div> <!-- close container -->
     </main>
       
     <!-- FOOTER -->
-    <div class="container footer-margin" id="footer-spacing"><pre>   <br></pre></div> <!-- close footer-margin -->
       <footer class="footer container-fluid text-center">
         <div  class="row"> <!-- two columns -->
           

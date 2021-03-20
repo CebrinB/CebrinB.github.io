@@ -1,11 +1,6 @@
 
-//jQuery that retrieves the contents of the .txt file and loads into DOM object
-// $(function(){
-//   $( "#target" ).load("../text.json");
-// });
-
-
-$.get("../text.json", function(data){
+//jQuery that retrieves the contents of a .json file and loads into DOM object
+$.get("text.json", function(data){
   $( "body" ).data("personData", data);
 }, 'json');
 
@@ -139,7 +134,6 @@ function populateProjects() {
   
 
   //fill in the footer links
-  $("#phone").html($( "body" ).data( "personData" ).phone);
   $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
   $("#email").html($( "body" ).data( "personData" ).email);
   $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
@@ -163,7 +157,6 @@ function populateContact() {
   $("#contactEmail").attr('action', $( "body" ).data( "personData" ).contactEmail);
 
   //fill in the footer links
-  $("#phone").html($( "body" ).data( "personData" ).phone);
   $("#phone").attr('href', 'tel:' + ($( "body" ).data( "personData" ).phone));
   $("#email").html($( "body" ).data( "personData" ).email);
   $("#email").attr('href', 'mailto:' + ($( "body" ).data( "personData" ).email));
@@ -181,29 +174,8 @@ function populateContact() {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//AJAX request to retrieve server-side file and console.log it, 
-//or we could fill a DOM object with it.
-// var requestURL = 'http://127.0.0.1:5500/text.json';
-// let request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-// request.responseType = 'json'; //change this to 'text' for a txt file
-// request.send();
-// request.onload = function() {
-//   const superhero = request.response;
-//   console.log(superhero);
-// }
+window.addEventListener("load", () => {
+  if ($( "body" ).data( "personData" )) {
+    populateAbout();
+  } 
+});

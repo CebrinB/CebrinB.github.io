@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z E S T Y !</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!-- use this link for slender text 
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/b631726285.js" crossorigin="anonymous"></script>
@@ -19,7 +18,7 @@
   
   <body class="about">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="index.html"><h3 id="brand">ZESTY</h3></a>
+      <a class="navbar-brand" href="index.html"><h3 id="brand"></h3></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -46,16 +45,13 @@
           <div class="col-md-8 innerColumn"> <!-- center column -->
             <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
               <div class="col-md-6 innerElement-left">
-                <img class="" style="width:100%; padding:2em" src="../images/personal.jpg" alt="A friendly picture of myself">
+                <img class="" style="width:100%; padding:1.5rem" src="../images/personal.jpg" alt="A friendly picture of myself">
               </div> <!-- close left inner column-->
               <div class="col-md-6 innerElement-right">
-                <div id="aboutme1"><span class="h5">I live in</span> Dallas, Texas with my husband and 3 children. I love the outdoors and working 
-                  hard to accomplish something meaningful.
+                <div id="aboutme1">
                 </div>
-                <div class="text-center" style="padding:.5em"><i class="fas fa-lemon"></i></div>
+                <div class="text-center" style="padding:5px"><i class="fas fa-lemon"></i></div>
                 <div id="aboutme2">
-                  <span class="h5">My lifelong love</span> of learning prompted me to pursue a Bachelor's degree in Software Engineering after my
-                   oldest child was born. Through the ups and downs I have learned so much, I can truly say I have loved the journey!
                 </div>
                 
               </div> <!-- close right inner column-->        
@@ -63,13 +59,10 @@
             <div class="row"><div class="col-md-12 text-center footer-margin"></div></div> <!-- spacing row -->
 
             <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
-              <div class="col-md-4 innerElement-left"><h3 id="section">Work History</h3></div> <!-- close left column-->
+              <div class="col-md-4 innerElement-left"><h3 id="title1"></h3></div> <!-- close left column-->
               
               <div class="col-md-8 innerElement-right">
-                <div><span class="h5">With 9 years'</span> experience in customer service, logistics, and administrative 
-                  support, I am quick under pressure and highly organized. I have 3 years' experience working remotely 
-                  and work well in a team setting. Below is a quick overview of my main technical skill sets and 
-                  technologies I use. 
+                <div id="workhistory1"> 
                 </div>
                 <div class="text-center" style="padding-bottom:.5em; padding-top: .5em"><i class="fas fa-lemon"></i></div>
                 <div><span class="h5">Want to find</span> out more about my experience? Check out my 
@@ -87,22 +80,23 @@
             
             <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
 
-              <div class="col-md-4 innerElement-left"><h3 id="section3">Skills</h3></div> <!-- close left column-->
+              <div class="col-md-4 innerElement-left"><h3 id="title2"></h3></div> <!-- close left column-->
               
               <div class="col-md-8 innerElement-right">
                 <div class="row">
                   <div class="col-md-6 minicolumn">
-                    <span id="skill1"><i class="fas fa-lemon"></i> JavaScript</span><br>
-                    <span id="skill2"><i class="fas fa-lemon"></i> HTML/CSS/Bootstrap</span><br>
-                    <span id="skill3"><i class="fas fa-lemon"></i> Java</span><br>
-                    <span id="skill4"><i class="fas fa-lemon"></i> C++</span><br>
-                    <span id="skill5"><i class="fas fa-lemon"></i> Visual Studio Code</span>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span>
                   </div> <!-- close mini column -->
                   <div class="col-md-6">
-                    <span id="skill6"><i class="fas fa-lemon"></i> Python</span><br>
-                    <span id="skill7"><i class="fas fa-lemon"></i> PHP</span><br>
-                    <span id="skill8"><i class="fas fa-lemon"></i> Node.js</span><br>
-                    <span id="skill9"><i class="fas fa-lemon"></i> Visual Studio</span>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span><br>
+                    <span class="skill"></span>
                   </div> <!-- close mini column -->
                 </div> <!-- close row -->
               </div> <!-- close right column -->
@@ -112,20 +106,21 @@
             
             <div class="row innerElement"> <!-- center column is divided in half, 2 inner columns -->
 
-              <div class="col-md-4 innerElement-left"><h3 id="section3">Hobbies & Interests</h3></div> <!-- close left column-->
+              <div class="col-md-4 innerElement-left"><h3 id="title3"></h3></div> <!-- close left column-->
               
               <div class="col-md-8 innerElement-right">
                 <div class="row">
                   <div class="col-md-6 minicolumn">
-                    <span id="skill1"><i class="fas fa-lemon"></i> Horseback Riding</span><br>
-                    <span id="skill2"><i class="fas fa-lemon"></i> Hiking</span><br>
-                    <span id="skill3"><i class="fas fa-lemon"></i> Gardening</span><br>
-                    <span id="skill4"><i class="fas fa-lemon"></i> Baking</span>
+                    <span class="hobby"></span><br>
+                    <span class="hobby"></span><br>
+                    <span class="hobby"></span><br>
+                    <span class="hobby"></span>
                   </div> <!-- close mini column -->
                   <div class="col-md-6">
-                    <span id="skill5"><i class="fas fa-lemon"></i> Snorkelling</span><br>
-                    <span id="skill6"><i class="fas fa-lemon"></i> Reading</span><br>
-                    <span id="skill7"><i class="fas fa-lemon"></i> Home Renovation</span>
+                    <span class="hobby"></span><br>
+                    <span class="hobby"></span><br>
+                    <span class="hobby"></span><br>
+                    <span class="hobby"></span>
                   </div> <!-- close mini column -->
                 </div> <!-- close row -->
               </div> <!-- close right column -->
@@ -151,11 +146,11 @@
             <div class="row">
               
               <div class="col-md-4">
-                <span><h5>Call</h5><p><a href="tel:1-555-555-5555" id="phone">555-555-5555</a></p></span> 
+                <span><h5>Call</h5><p><a href="#" id="phone"></a></p></span> 
               </div> <!-- close left minifooter-->
               
               <div class="col-md-4">
-                <span><h5>Write</h5><p><a href="mailto:email@byui.edu" id="email">email@byui.edu</a></p></span>
+                <span><h5>Write</h5><p><a href="#" id="email"></a></p></span>
               </div> <!-- close center minifooter -->
               
               <div class="col-md-4">
@@ -173,6 +168,6 @@
       </footer>
     
     
-    <script src="../main.js"></script>
+    <script src="../main.js" type="module"></script>
   </body>
 </html>

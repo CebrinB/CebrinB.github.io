@@ -50,17 +50,17 @@
  
      ["https://github.com/CebrinB/zpps",
       "../images/project2image.jpg",
-      "Senior Project, Zombie Plant Prevention System",
+      "Senior Project<br> Zombie Plant Prevention System",
       "Raspberry Pi, Python, Flask"],
  
      ["https://fierce-falls-17460.herokuapp.com/week7/view/home.php",
       "../images/project3image.jpg",
-      "PHP class project, E-commerce database",
+      "PHP class project<br> E-commerce database",
       "PHP, SQL, HTML/CSS"],
  
      ["https://kirjastoni.herokuapp.com/",
       "../images/project2image.jpg",
-      "Node.js class project, Kirjasto.ni library",
+      "Node.js class project<br> Kirjasto.ni library",
       "Node.js, SQL, JavaScript"]    
    ]
 }

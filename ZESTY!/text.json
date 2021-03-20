@@ -5,18 +5,18 @@
   "greeting": "Hello",
   "whoami": "Who I am & What I do",
   "welcome": "Welcome to my page. Feel free to contact me with any questions!",
-  "phone": "123-456-7891",
-  "email": "cebrin@byui.edu",
+  "phone": "I prefer E-mail",
+  "email": "Cebrin@byui.edu",
   "facebook": "https://www.facebook.com/cebrin",
   "twitter": "https://twitter.com/cebrinb",
   "linkedin": "https://www.linkedin.com/in/cebrinbillings",
   "instagram": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 
-  "aboutme1": "where you live, where you went to school, etc.",
-  "aboutme2": "'One time I ran a marathon!' or other interesting tidbits about you",  
+  "aboutme1": "<span class='h5'>I live in</span> Dallas, Texas with my husband and 3 children. I love the outdoors and working hard to accomplish something meaningful.",
+  "aboutme2": "<span class='h5'>My lifelong love</span> of learning prompted me to pursue a Bachelor's degree in Software Engineering after my oldest child was born. Through the ups and downs I have learned so much, I can truly say I have loved the journey!",  
 
   "title1": "Work History",
-  "workhistory1": "worked super hard at doing cool stuff and things",
+  "workhistory1": "<span class='h5'>With 9 years'</span> experience in customer service, logistics, and administrative support, I am quick under pressure and highly organized. I have 3 years' experience working remotely and work well in a team setting. Below is a quick overview of my main technical skill sets and technologies I use.",
 
   "title2": "Skills",
   "skills": [

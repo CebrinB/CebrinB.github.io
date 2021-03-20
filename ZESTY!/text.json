@@ -5,18 +5,18 @@
   "greeting": "Hello",
   "whoami": "Who I am & What I do",
   "welcome": "Welcome to my page. Feel free to contact me with any questions!",
-  "phone": "123-456-7891",
-  "email": "cebrin@byui.edu",
+  "phone": "I prefer E-mail",
+  "email": "Cebrin@byui.edu",
   "facebook": "https://www.facebook.com/cebrin",
   "twitter": "https://twitter.com/cebrinb",
   "linkedin": "https://www.linkedin.com/in/cebrinbillings",
   "instagram": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 
-  "aboutme1": "where you live, where you went to school, etc.",
-  "aboutme2": "'One time I ran a marathon!' or other interesting tidbits about you",  
+  "aboutme1": "<span class='h5'>I live in</span> Dallas, Texas with my husband and 3 children. I love the outdoors and working hard to accomplish something meaningful.",
+  "aboutme2": "<span class='h5'>My lifelong love</span> of learning prompted me to pursue a Bachelor's degree in Software Engineering after my oldest child was born. Through the ups and downs I have learned so much, I can truly say I have loved the journey!",  
 
   "title1": "Work History",
-  "workhistory1": "worked super hard at doing cool stuff and things",
+  "workhistory1": "<span class='h5'>With 9 years'</span> experience in customer service, logistics, and administrative support, I am quick under pressure and highly organized. I have 3 years' experience working remotely and work well in a team setting. Below is a quick overview of my main technical skill sets and technologies I use.",
 
   "title2": "Skills",
   "skills": [
@@ -42,50 +42,23 @@
     "Home Renovation"
   ],
 
-  "project1Site": "https://www.google.com",
+  "project1Site": "https://www.github.com/CebrinB/ZESTY",
   "project1Image": "../images/project1image.jpg",
-  "project1Title": "Project 1",
-  "project1Technologies": "Java",
+  "project1Title": "Zero Effort Skills Template, YAY!",
+  "project1Technologies": "HTML/Bootstrap CSS/JavaScript",
 
-  "project2Site": "https://www.google.com",
+  "project2Site": "https://github.com/CebrinB/zpps",
   "project2Image": "../images/project2image.jpg",
-  "project2Title": "Project 2",
-  "project2Technologies": "Java",
+  "project2Title": "Senior Project, Zombie Plant Prevention System",
+  "project2Technologies": "Raspberry Pi, Python, Flask",
 
-  "project3Site": "https://www.google.com",
+  "project3Site": "https://fierce-falls-17460.herokuapp.com/week7/view/home.php",
   "project3Image": "../images/project3image.jpg",
-  "project3Title": "Project 3",
-  "project3Technologies": "Java",
+  "project3Title": "PHP class project, E-commerce database",
+  "project3Technologies": "PHP, SQL, HTML/CSS",
 
-  "project4Site": "https://www.google.com",
-  "project4Image": "../images/underConstruction.jpg",
-  "project4Title": "Coming Soon",
-  "project4Technologies": "coming soon",
-
-  "project5Site": "https://www.google.com",
-  "project5Image": "../images/underConstruction.jpg",
-  "project5Title": "Coming Soon",
-  "project5Technologies": "coming soon",
-
-  "project6Site": "https://www.google.com",
-  "project6Image": "../images/underConstruction.jpg",
-  "project6Title": "Coming Soon",
-  "project6Technologies": "coming soon",
-
-  "project7Site": "https://www.google.com",
-  "project7Image": "../images/underConstruction.jpg",
-  "project7Title": "Coming Soon",
-  "project7Technologies": "coming soon",
-
-  "project8Site": "https://www.google.com",
-  "project8Image": "../images/underConstruction.jpg",
-  "project8Title": "Coming Soon",
-  "project8Technologies": "coming soon",
-
-  "project9Site": "https://www.google.com",
-  "project9Image": "../images/underConstruction.jpg",
-  "project9Title": "Coming Soon",
-  "project9Technologies": "coming soon",
-
-  "contactEmail": "mailto:hello@hello.com"
+  "project4Site": "https://kirjastoni.herokuapp.com/",
+  "project4Image": "../images/project4image.jpg",
+  "project4Title": "Node.js class project, Kirjasto.ni library",
+  "project4Technologies": "Node.js, SQL, JavaScript"
 }

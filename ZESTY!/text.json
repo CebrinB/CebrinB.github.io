@@ -5,18 +5,18 @@
   "greeting": "Hello",
   "whoami": "Who I am & What I do",
   "welcome": "Welcome to my page. Feel free to contact me with any questions!",
-  "phone": "I prefer E-mail",
-  "email": "Cebrin@byui.edu",
+  "phone": "123-456-7891",
+  "email": "cebrin@byui.edu",
   "facebook": "https://www.facebook.com/cebrin",
   "twitter": "https://twitter.com/cebrinb",
   "linkedin": "https://www.linkedin.com/in/cebrinbillings",
   "instagram": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 
-  "aboutme1": "<span class='h5'>I live in</span> Dallas, Texas with my husband and 3 children. I love the outdoors and working hard to accomplish something meaningful.",
-  "aboutme2": "<span class='h5'>My lifelong love</span> of learning prompted me to pursue a Bachelor's degree in Software Engineering after my oldest child was born. Through the ups and downs I have learned so much, I can truly say I have loved the journey!",  
+  "aboutme1": "where you live, where you went to school, etc.",
+  "aboutme2": "'One time I ran a marathon!' or other interesting tidbits about you",  
 
   "title1": "Work History",
-  "workhistory1": "<span class='h5'>With 9 years'</span> experience in customer service, logistics, and administrative support, I am quick under pressure and highly organized. I have 3 years' experience working remotely and work well in a team setting. Below is a quick overview of my main technical skill sets and technologies I use.",
+  "workhistory1": "worked super hard at doing cool stuff and things",
 
   "title2": "Skills",
   "skills": [
@@ -42,23 +42,25 @@
     "Home Renovation"
   ],
 
-  "project1Site": "https://www.github.com/CebrinB/ZESTY",
-  "project1Image": "../images/project1image.jpg",
-  "project1Title": "Zero Effort Skills Template, YAY!",
-  "project1Technologies": "HTML/Bootstrap CSS/JavaScript",
-
-  "project2Site": "https://github.com/CebrinB/zpps",
-  "project2Image": "../images/project2image.jpg",
-  "project2Title": "Senior Project, Zombie Plant Prevention System",
-  "project2Technologies": "Raspberry Pi, Python, Flask",
-
-  "project3Site": "https://fierce-falls-17460.herokuapp.com/week7/view/home.php",
-  "project3Image": "../images/project3image.jpg",
-  "project3Title": "PHP class project, E-commerce database",
-  "project3Technologies": "PHP, SQL, HTML/CSS",
-
-  "project4Site": "https://kirjastoni.herokuapp.com/",
-  "project4Image": "../images/project4image.jpg",
-  "project4Title": "Node.js class project, Kirjasto.ni library",
-  "project4Technologies": "Node.js, SQL, JavaScript"
+  "projects": [
+    ["https://www.github.com/CebrinB/ZESTY",
+      "../images/project1image.jpg",
+      "Zero Effort Skills Template, YAY!",
+      "HTML/Bootstrap CSS/JavaScript"],
+ 
+     ["https://github.com/CebrinB/zpps",
+      "../images/project2image.jpg",
+      "Senior Project, Zombie Plant Prevention System",
+      "Raspberry Pi, Python, Flask"],
+ 
+     ["https://fierce-falls-17460.herokuapp.com/week7/view/home.php",
+      "../images/project3image.jpg",
+      "PHP class project, E-commerce database",
+      "PHP, SQL, HTML/CSS"],
+ 
+     ["https://kirjastoni.herokuapp.com/",
+      "../images/project2image.jpg",
+      "Node.js class project, Kirjasto.ni library",
+      "Node.js, SQL, JavaScript"]    
+   ]
 }

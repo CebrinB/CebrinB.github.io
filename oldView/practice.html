@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let calculator = {
+    sum() {
+      return this.a + this.b;
+    },
+
+    mul() {
+      return this.a * this.b;
+    },
+
+    read() {
+      this.a = +prompt('a?', 0);
+      this.b = +prompt('b?', 0);
+    }
+  };
+
+  calculator.read();
+  alert( calculator.sum() );
+  alert( calculator.mul() );  
+    
+  </script>
+  <a href="week3.html">Back to Week 3</a>
+</body>
+</html>

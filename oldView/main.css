@@ -1,0 +1,44 @@
+body {
+  background-image: linear-gradient(to bottom right, #ecc7b6, rgb(233, 176, 58));
+}
+
+header {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  border-bottom: solid black 1px;
+}
+
+header p {
+  margin: 0px;
+}
+
+#myName {
+  font-family: 'Sacramento', cursive;
+  font-size: 42px;
+}
+
+header:last-child {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: black;
+}
